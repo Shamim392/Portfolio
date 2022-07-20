@@ -1,46 +1,28 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
-import Particle from "../Particle";
+import { Container } from "react-bootstrap";
+// import homeLogo from "../../Assets/home-main.svg";
 import Home2 from "./Home2";
-import Type from "./Type";
+import "./Home.css";
+import Button from "../Button/Button";
 
 function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
+      <div className="home-section" id="home">
         <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
-
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> Shaminur Rahaman Shamim</strong>
-              </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
-              </div>
-            </Col>
-
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
-            </Col>
-          </Row>
+          <div className="home-header">
+            <p className="heading">Hi There! I am</p>
+            <h1 className="heading-name">Shaminur Rahaman</h1>
+            <h3 className="heading-content">Full Stack Developer</h3>
+            <ul>
+              <li className="first-li">Web Developer</li>
+              <li>Competative Programmer</li>
+            </ul>
+          </div>
+          <Button />
+          <div className="action"></div>
         </Container>
-      </Container>
+      </div>
       <Home2 />
     </section>
   );
