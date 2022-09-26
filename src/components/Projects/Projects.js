@@ -53,7 +53,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={four}
+              imgPath={five}
               isBlog={false}
               title="Bike-Shop"
               description="This project is an frontend website build with html and CSS"
@@ -64,7 +64,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={five}
+              imgPath={four}
               isBlog={false}
               title="Weather App"
               description=" Weather forecast systems and applications predict weather conditions based on multiple parameters. "
