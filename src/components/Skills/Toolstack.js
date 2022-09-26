@@ -10,16 +10,16 @@ import {
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col className="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2 tech-icons">
         <SiVisualstudiocode />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col className="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2 tech-icons">
         <SiLinux />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col className="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2 tech-icons">
         <SiPostman />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col className="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2 tech-icons">
         <SiHeroku />
       </Col>
     </Row>

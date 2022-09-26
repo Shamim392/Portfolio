@@ -2,21 +2,13 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
+import logo from "../../Assets/logo.png";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
-import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
+import pdf from "../../Assets/Resume of Shaminur.pdf";
+import Button from "react-bootstrap/Button";
+import "./Navbar.css";
 
-import { CgFileDocument } from "react-icons/cg";
-
-function NavBar() {
+const NavBar = () => {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -39,7 +31,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img src={logo} className="img-fluid logo h-100" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -58,17 +50,24 @@ function NavBar() {
                 Home
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/about"
+                to="/skills"
                 onClick={() => updateExpanded(false)}
               >
-                About
+                Skills
               </Nav.Link>
             </Nav.Item>
-
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/achievement"
+                onClick={() => updateExpanded(false)}
+              >
+                Achievement
+              </Nav.Link>
+            </Nav.Item>
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -78,38 +77,21 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                Resume
-              </Nav.Link>
-            </Nav.Item>
-
             <Nav.Item>
               <Nav.Link href="#" target="_blank" rel="noreferrer">
                 Blogs
               </Nav.Link>
             </Nav.Item>
-
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/shamim/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+            <div className="p-2">
+              <Button className="resume-button" href={pdf} target="_blank">
+                Resume
               </Button>
-            </Nav.Item> */}
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-}
+};
 
 export default NavBar;

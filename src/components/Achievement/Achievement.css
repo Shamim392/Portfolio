@@ -1,0 +1,91 @@
+.achievementDiv {
+  background-color: #111a28;
+  color: white;
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+.achievementHeading {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.rowAchievement {
+  padding-right: 30px;
+  padding-left: 35px;
+}
+.achievement {
+  background-color: rgb(222, 239, 230);
+  color: black;
+  border-radius: 10px;
+  padding: 70px 100px 20px 100px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.achievement:hover {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+  opacity: 95%;
+  transition: opacity 0.3s ease-in-out;
+}
+.icon {
+  font-size: 45px;
+  margin-left: -50px;
+  margin-top: -45px;
+}
+.iconShape {
+  font-weight: bold;
+}
+.year {
+  /* color: #00c13e; */
+  text-align: left;
+  margin-left: 30px;
+  margin-top: -40px;
+  font-weight: bold;
+}
+.academy {
+  text-align: left;
+
+  margin-left: 30px;
+  margin-top: -15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.degree {
+  color: #00c13e;
+  font-size: 24px;
+  font-weight: 700;
+}
+.university {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+.gHash {
+  color: #00c13e;
+  font-size: 23px;
+}
+@media only screen and (max-width: 500px) {
+  .achievementHeading {
+    text-align: center;
+  }
+  .achievement {
+    padding: 65px 100px 0px 100px;
+  }
+  .academy {
+    margin-left: 30px;
+    margin-top: -15px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .degree {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .university {
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .gHash {
+    font-size: 16px;
+  }
+}

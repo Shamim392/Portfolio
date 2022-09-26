@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import myImg from "../../Assets/avatar.svg";
 import myImg from "../../Assets/myImg.png";
-
-import Tilt from "react-parallax-tilt";
-import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiOutlineTwitter,
+} from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -12,55 +13,35 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
+          <h1 className="introHeading" style={{ fontSize: "2.6em" }}>
+            LET ME INTRODUCE <span className="introSpan">MYSELF</span>
+          </h1>
+          <Col md={6} className="home-about-description">
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C, C++ and Javascript. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js</b>
-              </i>
+              Hello! I'm Shaminur Rahaman Shamim. I'm a front end web developer
+              based in Dhaka,Bangladesh. During the day I work as a Front end
+              developer kajkam initiative ltd. and in the evening I work on
+              freelance projects and utilize the time to built my own products.
+              I spent my leisure hours reading books. Right now I'm also trying
+              a hand at Javascript and React JS. I love to learn and explore new
+              areas.
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+          <Col md={6} className="myAvtar">
+            <div>
+              <img
+                src={myImg}
+                className="img-fluid profileImage"
+                alt="avatar"
+              />
+            </div>
           </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="introSpan">connect </span>with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -93,7 +74,7 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              {/* <li className="social-icons">
+              <li className="social-icons">
                 <a
                   href="https://www.instagram.com/shaminur_125"
                   target="_blank"
@@ -102,7 +83,7 @@ function Home2() {
                 >
                   <AiFillInstagram />
                 </a>
-              </li> */}
+              </li>
             </ul>
           </Col>
         </Row>

@@ -1,9 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-// import homeLogo from "../../Assets/home-main.svg";
-import Home2 from "./Home2";
+import Intro from "./Intro";
 import "./Home.css";
-import Button from "../Button/Button";
+import Buttons from "../Buttons/Buttons";
 
 function Home() {
   return (
@@ -19,11 +18,10 @@ function Home() {
               <li>Competative Programmer</li>
             </ul>
           </div>
-          <Button />
-          <div className="action"></div>
+          <Buttons />
         </Container>
       </div>
-      <Home2 />
+      <Intro />
     </section>
   );
 }
